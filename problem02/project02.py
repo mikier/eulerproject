@@ -33,5 +33,5 @@ def solve_problem2(fibo_func):
     t1 = time.time()
     print('function:{} sum:{}, elapsed time{} '.format(fibo_func, sum, t1-t0))
 
-for fibo_func in [fibo_num,linalg_fibo]:
+for fibo_func in [linalg_fibo, fibo_num]:
     solve_problem2(fibo_func)
