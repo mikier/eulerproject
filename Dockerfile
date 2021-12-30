@@ -11,7 +11,7 @@ ENV PYTHONUNBUFFERED=1
 COPY requirements.txt .
 RUN python -m pip install -r requirements.txt
 
-WORKDIR /app/problem03
+WORKDIR /app/problem05
 COPY . /app
 
 # Creates a non-root user with an explicit UID and adds permission to access the /app folder
@@ -20,4 +20,4 @@ RUN adduser -u 5678 --disabled-password --gecos "" appuser && chown -R appuser /
 USER appuser
 
 # During debugging, this entry point will be overridden. For more information, please refer to https://aka.ms/vscode-docker-python-debug
-CMD ["python", "project03.py"]
+CMD ["python", "legobrick.py"]

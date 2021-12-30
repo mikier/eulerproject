@@ -19,7 +19,7 @@
 				"docker-build"
 			],
 			"python": {
-				"file": "project03.py"
+				"file": "legobrick.py"
 			}
 		}
 	]
